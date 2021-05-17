@@ -1,0 +1,17 @@
+<h2>This is a new Game</h2>
+<br>
+<h2>These are your Letters</h2>
+<div class="array">
+  <%= @word_array %>
+</div>
+<br>
+<h2>What is your longest word?</h2>
+
+<form action="/score" method="post">
+  <input type="text" name="answer" placeholder="your word">
+  <input type="submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input id="word_array" name="word_array" type="hidden" value=<%= @word_array.join %> />
+</form>
+
+

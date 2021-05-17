@@ -1,0 +1,25 @@
+<br>
+<h2>These were the Letters</h2><br>
+<%= @word_array %>
+<br>
+<br>
+You said <strong> <%= @answer %> </strong><br>
+What a nice word!!!
+<br>
+<br>
+<h2>Did you win? 🏅<br></h2>
+<%= @won %><br>
+Your Score: <%= @score %>
+<br>
+<h3>Is it in the dictionary? 📖 </h3>
+<%= @dictionary_check %>
+<br>
+<h3>Is it included in the array? 📦</h3>
+<%= @included_check  %>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<%= link_to "Let me play again", new_path %>
